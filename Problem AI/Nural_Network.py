@@ -39,7 +39,9 @@ h2 = nn.graph[1] * nn.edge[2] + nn.graph[1]*nn.edge[3]
 Datah1 = nn.Method1(h1)
 Datah2 = nn.Method1(h2)
 
-ol = Datah1+Datah2
+hData = Datah1+Datah2
+ol = nn.Method1(hData)
+
 nn.InsertNodeValue(ol)
 nn.AddEdgeValue(Datah1)
 nn.AddEdgeValue(Datah2)

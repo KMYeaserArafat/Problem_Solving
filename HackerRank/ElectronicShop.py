@@ -1,4 +1,5 @@
-def getMoneySpent(keyboard,drives,b,n,m):
+
+def getMoneySpent(keyboard,drives,b):
     total = -1
     
     for x in keyboard:
@@ -16,4 +17,4 @@ b,n,m = map(int,input().split())
 keyboard = list(map(int,input().split()))
 drives = list(map(int,input().split()))
 
-print(getMoneySpent(keyboard,drives,b,n,m))
+print(getMoneySpent(keyboard,drives,b))

@@ -1,4 +1,2 @@
-
-# b = int(input().strip())
-# n = int(input().strip())
-# m = int(input().strip())
+p = int(input())
+# player = list(map(int,input().split()))

@@ -1,6 +1,4 @@
-# Find the number with the maximum occurrences
-# max_occurrences_number = max(set(arr), key=arr.count)
-# # Find the maximum occurrences
-# max_occurrences_count = arr.count(max_occurrences_number)
 
-# print(max_occurrences_count)
+# b = int(input().strip())
+# n = int(input().strip())
+# m = int(input().strip())

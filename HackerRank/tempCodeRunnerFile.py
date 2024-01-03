@@ -1,9 +1,5 @@
-while(i<n):
-            j = i+1
-            while(j<n):
-                if(arr[i]==arr[j]):
-                    count+=1
-                    i+=1
-                    return count
-                elif(arr[i]<arr[j]):
-                    i+=2
+for x in range(len(slist)):
+#     Data = string.ascii_lowercase.index(x)
+#     indexValueList.append(Data)
+
+# print(Data)

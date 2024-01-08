@@ -1,5 +1,3 @@
-for x in range(len(slist)):
-#     Data = string.ascii_lowercase.index(x)
-#     indexValueList.append(Data)
-
-# print(Data)
+for x in range(len(arr)):
+#     Data = int(arr[x])
+#     Data.rep

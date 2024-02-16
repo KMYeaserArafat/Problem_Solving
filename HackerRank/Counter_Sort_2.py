@@ -1,4 +1,4 @@
-
+# Counter-Sort-2
 
 def countingSort(arr):
     count = [0]*100
@@ -12,3 +12,7 @@ def countingSort(arr):
 n=int(input())
 arr = list(map(int,input().split()))[:n]
 countingSort(arr)
+
+
+
+    

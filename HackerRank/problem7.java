@@ -12,9 +12,6 @@ plusMinus Problem,
 */
 
 
-
-package HackerRank;
-
 import java.util.Scanner;
 
 

@@ -1,5 +1,7 @@
 
 import random
+import AutoCalenderGenerator
+import QRCodeGenerator
 
 
 class DataBase:
@@ -10,12 +12,14 @@ class DataBase:
     
     def MianOption(self):
         print("*************************")
-        print("Tender Lottery Project : ")
+        print("Company's Tender Lottery Project : ")
         print("*************************")
         print("1) Register Company ")
         print("2) Show All Company's Information")
         print("3) Search Company's Information")
         print("4) Lottery Tender ")
+        print("5) Auto Calender Generator ")
+        print("6) Generate QR Code ")
         print("0) Exit")
         option1 = int(input("Enter Your Option : "))
         return option1
@@ -76,10 +80,16 @@ while(True):
         company1.SearchCompanyInformation()
     elif(mainOption==4):
         company1.Lottery()
+    elif(mainOption==5):
+        AutoCalenderGenerator.AutoCalender()
+    elif(mainOption==6):
+        QRCodeGenerator.QrGenerate()
     elif(mainOption==0):
         # for exit programe, 
         print("Okey ! Good bye...")
         break
+    else:
+        print("Invalid Option!! Please Try Again...")
 
 
 

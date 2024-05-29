@@ -32,23 +32,25 @@ class DataBase:
         size = len(self.companyInformation)
         print("Show Company's Information : ")
         for iteam in range(size):
-            print(f"Show Comapny Information {iteam+1} : {self.companyInformation[iteam]} ")
+            print(f"Show Company Information {iteam+1} : {self.companyInformation[iteam]} ")
 
     def SearchCompanyInformation(self):
-        pass
+        name = input("Enter Company Name to Search: ")
+        found = False
+        for company in self.companyInformation:
+            if company["Name"].lower() == name.lower():
+                print(f"Company Found: {company}")
+                found = True
+                break
+        if not found:
+            print("Company not found!")
 
     def Lottery(self):
-        if not self.companyInformation:
-            print("No companies registered for the lottery.")
-            return
         winner_index = random.randint(0, len(self.companyInformation) - 1)
         winner = self.companyInformation[winner_index]
         print(f"-> Lottery Winner: {winner['Name']} owned by {winner['Owner']} with Licence No: {winner['Licence']}")
         
         
-
-
-
 
 # Create a class obj, 
 
@@ -64,15 +66,14 @@ while(True):
             company1.CompanyRegistrationData()
             print("# Registered!!")
     elif(mainOption==2):
-        # Show All Comapny's Information,
+        # Show All Company's Information,
         print("** Show Company's Information ** ")
         if not company1.companyInformation:
             print("-> Data Not found!!")
         else:
             company1.ShowCompanyInformation()
     elif(mainOption==3):
-        # Search Company Information, 
-        pass
+        company1.SearchCompanyInformation()
     elif(mainOption==4):
         company1.Lottery()
     elif(mainOption==0):
